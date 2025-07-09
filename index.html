@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molto Milto | Premium T-Shirts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <div class="logo-img">
+                <i class="fas fa-tshirt" style="font-size: 2.5rem; color: var(--tan);"></i>
+            </div>
+            <div class="logo-text">molto <span>milto</span></div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="cart-count" id="cartCount">0</div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Elevate Your Style with <span>Molto Milto</span></h1>
+        <p>Discover premium quality t-shirts designed for comfort and crafted for style.</p>
+        <a href="#products" class="btn">Shop Collection</a>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2 class="section-title">Our Collections</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <div class="category-image">
+                    <i class="fas fa-mountain"></i>
+                </div>
+                <div class="category-info">
+                    <h3>Classic Fit</h3>
+                    <p>Timeless styles for everyday wear</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-image">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="category-info">
+                    <h3>Summer Vibes</h3>
+                    <p>Lightweight fabrics for warmer days</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-image">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <div class="category-info">
+                    <h3>Graphic Prints</h3>
+                    <p>Expressive designs that make a statement</p>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-image">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="category-info">
+                    <h3>Eco Collection</h3>
+                    <p>Sustainable fabrics, responsible fashion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2 class="section-title">Featured T-Shirts</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-badge">Bestseller</div>
+                <div class="product-image">
+                    <i class="fas fa-tshirt" style="font-size: 8rem; color: var(--sage);"></i>
+                </div>
+                <div class="product-info">
+                    <h3>Classic Comfort Tee</h3>
+                    <div class="price">$29.99 <span class="old-price">$39.99</span></div>
+                    <p class="description">Our signature cotton t-shirt for everyday comfort and style.</p>
+                    <div class="size-selector">
+                        <button class="size-btn">S</button>
+                        <button class="size-btn selected">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                    </div>
+                    <button class="add-to-cart" data-id="1" data-name="Classic Comfort Tee" data-price="29.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-badge">New</div>
+                <div class="product-image">
+                    <i class="fas fa-tshirt" style="font-size: 8rem; color: var(--dark-olive);"></i>
+                </div>
+                <div class="product-info">
+                    <h3>Organic Cotton Crew</h3>
+                    <div class="price">$34.99</div>
+                    <p class="description">Made from 100% organic cotton for the eco-conscious wearer.</p>
+                    <div class="size-selector">
+                        <button class="size-btn">S</button>
+                        <button class="size-btn selected">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                    </div>
+                    <button class="add-to-cart" data-id="2" data-name="Organic Cotton Crew" data-price="34.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <i class="fas fa-tshirt" style="font-size: 8rem; color: var(--tan);"></i>
+                </div>
+                <div class="product-info">
+                    <h3>Premium Slim Fit</h3>
+                    <div class="price">$39.99</div>
+                    <p class="description">Tailored fit for a sleek, modern silhouette.</p>
+                    <div class="size-selector">
+                        <button class="size-btn">S</button>
+                        <button class="size-btn selected">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                    </div>
+                    <button class="add-to-cart" data-id="3" data-name="Premium Slim Fit" data-price="39.99">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-badge">Sale</div>
+                <div class="product-image">
+                    <i class="fas fa-tshirt" style="font-size: 8rem; color: #3a506b;"></i>
+                </div>
+                <div class="product-info">
+                    <h3>Ocean Blue Graphic Tee</h3>
+                    <div class="price">$32.99 <span class="old-price">$42.99</span></div>
+                    <p class="description">Vibrant design with ocean-inspired artwork.</p>
+                    <div class="size-selector">
+                        <button class="size-btn">S</button>
+                        <button class="size-btn selected">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                    </div>
+                    <button class="add-to-cart" data-id="4" data-name="Ocean Blue Graphic Tee" data-price="32.99">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>Our Story</h2>
+            <p>Founded in 2018, Molto Milto began with a simple mission: to create the perfect t-shirt. We believed that everyone deserves high-quality, comfortable basics that stand the test of time.</p>
+            <p>Our journey started in a small workshop where we experimented with fabrics, cuts, and construction techniques. After hundreds of prototypes, we developed our signature fabric blend - a combination of premium cotton and innovative fibers that offers unmatched comfort and durability.</p>
+            <p>Today, we continue to push boundaries in sustainable fashion while maintaining our commitment to exceptional quality and ethical manufacturing practices.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="about-image">
+            <i class="fas fa-hands-helping"></i>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"The quality of Molto Milto t-shirts is unmatched. I've had mine for over a year and it still looks brand new after countless washes."</p>
+                <div class="customer">
+                    <div class="customer-avatar">MJ</div>
+                    <div class="customer-info">
+                        <h4>Michael Johnson</h4>
+                        <p>Regular Customer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"I ordered five t-shirts for my entire family and we all love them! The fit is perfect and the fabric is so comfortable."</p>
+                <div class="customer">
+                    <div class="customer-avatar">SR</div>
+                    <div class="customer-info">
+                        <h4>Sarah Roberts</h4>
+                        <p>Family Shopper</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>"As someone who values sustainability, I appreciate Molto Milto's commitment to ethical production and eco-friendly materials."</p>
+                <div class="customer">
+                    <div class="customer-avatar">EP</div>
+                    <div class="customer-info">
+                        <h4>Emma Peterson</h4>
+                        <p>Eco Advocate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Molto Milto</h3>
+                <p>Premium t-shirts crafted with exceptional quality, comfort, and style for the modern individual.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Size Guide</a>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Returns & Exchanges</a>
+                <a href="#">FAQ</a>
+                <a href="#">Track Order</a>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Style City</p>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@moltomilto.com</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Molto Milto. All rights reserved. Premium Quality T-Shirts.</p>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart -->
+    <div class="overlay" id="overlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added dynamically -->
+            <div class="empty-cart-message" style="text-align: center; padding: 2rem;">
+                <i class="fas fa-shopping-cart" style="font-size: 3rem; color: #ddd; margin-bottom: 1rem;"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-total" id="cartTotal">
+            Total: $0.00
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+
+    <script>
+        // Shopping Cart Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartIcon = document.getElementById('cartIcon');
+            const cartModal = document.getElementById('cartModal');
+            const closeCart = document.getElementById('closeCart');
+            const overlay = document.getElementById('overlay');
+            const cartCount = document.getElementById('cartCount');
+            const cartItems = document.getElementById('cartItems');
+            const cartTotal = document.getElementById('cartTotal');
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            
+            let cart = [];
+            
+            // Open cart
+            cartIcon.addEventListener('click', function() {
+                cartModal.classList.add('open');
+                overlay.classList.add('active');
+            });
+            
+            // Close cart
+            closeCart.addEventListener('click', function() {
+                cartModal.classList.remove('open');
+                overlay.classList.remove('active');
+            });
+            
+            // Close cart when clicking overlay
+            overlay.addEventListener('click', function() {
+                cartModal.classList.remove('open');
+                overlay.classList.remove('active');
+            });
+            
+            // Add to cart functionality
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const id = this.getAttribute('data-id');
+                    const name = this.getAttribute('data-name');
+                    const price = parseFloat(this.getAttribute('data-price'));
+                    
+                    // Add to cart array
+                    const existingItem = cart.find(item => item.id === id);
+                    
+                    if (existingItem) {
+                        existingItem.quantity++;
+                    } else {
+                        cart.push({
+                            id,
+                            name,
+                            price,
+                            quantity: 1
+                        });
+                    }
+                    
+                    // Update cart UI
+                    updateCart();
+                    
+                    // Show cart
+                    cartModal.classList.add('open');
+                    overlay.classList.add('active');
+                    
+                    // Button feedback
+                    const originalText = this.textContent;
+                    this.textContent = 'Added!';
+                    this.style.backgroundColor = 'var(--tan)';
+                    this.style.color = 'white';
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.style.backgroundColor = '';
+                        this.style.color = '';
+                    }, 2000);
+                });
+            });
+            
+            // Update cart function
+            function updateCart() {
+                // Update count
+                const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+                cartCount.textContent = totalItems;
+                
+                // Update cart items
+                cartItems.innerHTML = '';
+                
+                if (cart.length === 0) {
+                    cartItems.innerHTML = `
+                        <div class="empty-cart-message" style="text-align: center; padding: 2rem;">
+                            <i class="fas fa-shopping-cart" style="font-size: 3rem; color: #ddd; margin-bottom: 1rem;"></i>
+                            <p>Your cart is empty</p>
+                        </div>
+                    `;
+                } else {
+                    cart.forEach(item => {
+                        const cartItemElement = document.createElement('div');
+                        cartItemElement.className = 'cart-item';
+                        cartItemElement.innerHTML = `
+                            <div class="cart-item-img">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                            <div class="cart-item-info">
+                                <div class="cart-item-title">${item.name}</div>
+                                <div class="cart-item-price">$${item.price.toFixed(2)} × ${item.quantity}</div>
+                                <button class="cart-item-remove" data-id="${item.id}">Remove</button>
+                            </div>
+                        `;
+                        cartItems.appendChild(cartItemElement);
+                    });
+                    
+                    // Add event listeners to remove buttons
+                    document.querySelectorAll('.cart-item-remove').forEach(button => {
+                        button.addEventListener('click', function() {
+                            const id = this.getAttribute('data-id');
+                            cart = cart.filter(item => item.id !== id);
+                            updateCart();
+                        });
+                    });
+                }
+                
+                // Update total
+                const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+            }
+            
+            // Size selector functionality
+            document.querySelectorAll('.size-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove selected class from all buttons in this group
+                    this.parentElement.querySelectorAll('.size-btn').forEach(btn => {
+                        btn.classList.remove('selected');
+                    });
+                    
+                    // Add selected class to clicked button
+                    this.classList.add('selected');
+                });
+            });
+            
+            // Initialize cart
+            updateCart();
+        });
+    </script>
+</body>
+</html>
